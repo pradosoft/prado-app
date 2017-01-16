@@ -3,7 +3,6 @@
 $checkPathsRW = array(
 	'assets',
 	'protected/runtime',
-	'protected/runtime/sessions/',
 );
 
 foreach($checkPathsRW as $p)
