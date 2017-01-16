@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<application id="prado-app" mode="Debug">
+	<paths>
+		<using namespace="Application.Common.*" />
+	</paths>
+	<!-- modules configured and loaded for all services -->
+	<modules>
+		<module id="request" class="THttpRequest" UrlFormat="HiddenPath" />
+		<module id="parameter" class="TParameterModule" ParameterFile="Application.Data.Settings" />
+	</modules>
+	<services>
+		<!-- page service -->
+		<service id="page" class="TPageService" DefaultPage="Home">
+			<modules>
+				<module id="session" class="THttpSession" SessionName="SSID" CookieMode="Only" UseCustomStorage="false" AutoStart="true" TimeOut="28800" />
+				<module id="asset" class="System.Web.TAssetManager" />
+			</modules>
+			<pages  MasterClass="Application.Layouts.MainLayout" />
+		</service>
+	</services>
+</application>
