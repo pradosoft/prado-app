@@ -12,6 +12,6 @@ In order to use this project, you neeed to install composer:
 
 Then, use it to create the application structure:
 	
-	$ composer create-project --prefer-dist prado/prado-app app
+	$ composer create-project pradosoft/prado-app app
 
 The `app` directory will contain the application.
