@@ -1,5 +1,3 @@
-# Warning: this is a prerelease, and is not usable yet.
-
 # Prado PHP Framework - Basic appliction project
 
 PRADO is a component-based and event-driven programming framework for developing Web applications in PHP 5.
