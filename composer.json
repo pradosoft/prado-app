@@ -17,7 +17,7 @@
 		}
 	],
 	"require": {
-		"pradosoft/prado": "*"
+		"pradosoft/prado": "^4"
 	},
 	"config": {
 		"vendor-dir": "protected/vendor"
