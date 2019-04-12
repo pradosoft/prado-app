@@ -15,21 +15,35 @@
 </com:THead>
 <body>
 	<com:TForm>
+		<com:TClientScript PradoScripts="bootstrap" />
+		<com:TStyleSheet PradoStyles="bootstrap" />
 		<header>
-			<h1><%$ SiteName %></h1>
-			<nav>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h3><%$ SiteName %></h3>
+						<nav class="navbar">
+							<ul class="nav navbar-nav">
+								<li><a href="#">Menu 1</a></li>
+								<li><a href="#">Menu 2</a></li>
+								<li><a href="#">Menu 3</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
 		</header>
 		<main>
 			<com:TContentPlaceHolder ID="Main" />
 		</main>
 		<footer>
-			<%= date('Y') %>, <%$ SiteOwner%> - <%= Prado::poweredByPrado(1) %>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<%= date('Y') %>, <%$ SiteOwner%> - <%= Prado::poweredByPrado(1) %>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</com:TForm>
 </body>
