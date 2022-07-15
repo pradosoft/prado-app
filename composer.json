@@ -17,7 +17,8 @@
 		}
 	],
 	"require": {
-		"pradosoft/prado": "^4"
+		"pradosoft/prado": "^4",
+		"bower-asset/bootstrap": "^5"
 	},
 	"config": {
 		"vendor-dir": "protected/vendor"

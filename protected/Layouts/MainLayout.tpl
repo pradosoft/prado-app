@@ -15,18 +15,24 @@
 </com:THead>
 <body>
 	<com:TForm>
-		<com:TClientScript PradoScripts="bootstrap" />
-		<com:TStyleSheet PradoStyles="bootstrap" />
+		<com:TClientScript ScriptUrl="<%= $this->getBoostrapUrl() . '/js/bootstrap.min.js' %>" />
+		<com:TStyleSheet StyleSheetUrl="<%= $this->getBoostrapUrl() . '/css/bootstrap.css' %>" />
 		<header>
 			<div class="container">
 				<div class="row">
 					<div class="col">
 						<h3><%$ SiteName %></h3>
-						<nav class="navbar">
-							<ul class="nav navbar-nav">
-								<li><a href="#">Menu 1</a></li>
-								<li><a href="#">Menu 2</a></li>
-								<li><a href="#">Menu 3</a></li>
+						<nav class="navbar navbar-expand-lg navbar-light bg-light">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Menu 1</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link"href="#">Menu 2</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Menu 3</a>
+								</li>
 							</ul>
 						</nav>
 					</div>
