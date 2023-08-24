@@ -4,6 +4,9 @@
 	<paths>
 		<using namespace="Application.Common.*" />
 	</paths>
+	<parameters>
+		<parameter id="PluginContentId" value='Main' />
+	</parameters>
 	<!-- modules configured and loaded for all services -->
 	<modules>
 		<module id="request" class="THttpRequest" UrlFormat="HiddenPath" />
