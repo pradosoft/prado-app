@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--
+	mode="Debug" is for development: errors show their message, source, and stack trace, and the
+	built-in web server ("composer webserver") is available. Prado defaults to Normal mode.
+	Before deploying, set mode="Normal" or mode="Performance", or remove the attribute.
+-->
 <application id="prado-app" mode="Debug">
 	<paths>
 		<using namespace="Application.Common.*" />

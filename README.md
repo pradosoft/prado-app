@@ -32,6 +32,13 @@ composer webserver
 
 The application is then accessible on the machine's browser at `http://127.0.0.1:8080/`.  The built-in web server is enabled when the application is in "Debug" mode or is enabled in the application configuration parameters.
 
+### Application Mode
+
+The project's `protected/application.xml` sets `mode="Debug"` for development. In Debug mode an error page shows the exception message, source, and stack trace, and the built-in web server is available. Prado applications default to "Normal" mode, which shows visitors a generic error message and logs the exception. Before deploying, set `mode="Normal"` or `mode="Performance"`, or remove the attribute:
+```xml
+<application id="prado-app" mode="Normal">
+```
+
 ## PRADO Composer Extensions
 
 As of version 4.2, PRADO supports Composer extensions to plug new functionality directly into a PRADO application; such as new web controls, API integration, authorization, services, analytics, custom behaviors, and CLI commands.  3rd party extensions can be found at [Packagist - Prado4-Extensions](https://packagist.org/?query=prado4&type=prado4-extension).
